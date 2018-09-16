@@ -301,8 +301,8 @@ end
 
 % Get bounds for the constraint functions
 if nrc
-    rcl=[zeros(1,nrcl),-inf*ones(1,nrcu),zeros(nrce)];
-    rcu=[inf*ones(1,nrcl),zeros(1,nrcu),zeros(nrce)];
+    rcl=[zeros(1,nrcl),-inf*ones(1,nrcu),zeros(1,nrce)];
+    rcu=[inf*ones(1,nrcl),zeros(1,nrcu),zeros(1,nrce)];
 else 
     rcl=[];
     rcu=[];

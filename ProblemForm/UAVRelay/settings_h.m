@@ -99,7 +99,7 @@ options.perturbation.J=[];  % Perturbation size for the first derivatives
 % IPOPT: recommended but needs ipopt.mex        ('ipopt')
 % fmincon                                       ('fmincon')
 % WORHP                                         ('worhp')
-options.NLPsolver='ipopt';
+options.NLPsolver='builtinSQP';
 
 % IPOPT settings (if required)
 options.ipopt.tol=1e-9;                        % Desired convergence tolerance (relative). The default value is  1e-8. 

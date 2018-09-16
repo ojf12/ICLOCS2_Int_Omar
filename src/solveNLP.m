@@ -97,7 +97,7 @@ switch(data.options.NLPsolver)
         
     case{'builtinSQP'}
         %         SQPoptions=data.options.SQP;
-        options.max_iter=100;
+        options.max_iter=30;
         options.vars.eta = 0.01; % between 0 and 0.5
         options.vars.tau = 0.75; % between 0 and 1
         options.vars.delta = 1e-1; % big enough
@@ -126,8 +126,8 @@ switch(data.options.NLPsolver)
         bounds.xu=NLP.zu;
         bounds.cl=zeros(size(NLP.cl));                    % Lower bounds on constraints.
         bounds.cu=zeros(size(NLP.cu));                      % Upper bounds on constraints
-%         bounds.cl=NLP.cl;                    % Lower bounds on constraints.
-%         bounds.cu=NLP.cu;                      % Upper bounds on constraints
+        bounds.cl=NLP.cl;                    % Lower bounds on constraints.
+        bounds.cu=NLP.cu;                      % Upper bounds on constraints
         bounds.bl=[];
         bounds.bu=[];
         

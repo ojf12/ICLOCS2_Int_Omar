@@ -37,7 +37,7 @@ function options = settings_h(N)
 % Global LGR method         ('globalLGR')
 % Local LGR method          ('hpLGR')
 % Automatic chosen direct collocation ('AutoDirect')
-options.transcription='hermite';
+options.transcription='trapezoidal';
 
 % Result Representation:
 %---------------------------------------

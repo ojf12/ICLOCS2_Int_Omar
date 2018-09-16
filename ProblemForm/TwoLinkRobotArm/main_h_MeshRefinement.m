@@ -31,7 +31,7 @@ timeHistory=zeros(1,2);
 solutionHistory=cell(1,2);
 
 maxAbsError=1e9;
-i=1; imax=5;
+i=1; imax=1;
 
 while (any(maxAbsError>problem.states.xErrorTol) || any(maxAbsConstraintError>problem.constraintErrorTol)) && i<=imax    
     [infoNLP,data,options]=transcribeOCP(problem,guess,options); % Format for NLP solver
