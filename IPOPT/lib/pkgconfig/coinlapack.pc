@@ -1,0 +1,11 @@
+prefix=/home/yn15/CoinIpopt/build
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+
+Name: Lapack
+Description: Linear algebra package
+URL: https://projects.coin-or.org/BuildTools
+Version: 1.5
+Libs: -L${libdir} -lcoinlapack   -LC:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0 -LC:/MinGW64/bin/../lib/gcc -LC:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../lib -LC:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/lib -LC:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../.. -lgfortran -lmingw32 -lmoldname -lmingwex -lmsvcrt -lquadmath -lm -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32
+Cflags:
+Requires: coinblas 
